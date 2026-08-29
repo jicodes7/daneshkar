@@ -3,7 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <title>Calculator</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f2f5;
+    }
+
+    .calculator {
+      background-color: #222;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      width: 320px;
+    }
+
+    .display {
+      background-color: #333;
+      color: #fff;
+      font-size: 2.2rem;
+      text-align: right;
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      overflow-x: auto;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    button {
+      height: 60px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #e0e0e0;
+      color: #333;
+      transition: background-color 0.2s, transform 0.1s;
+    }
+
+    button:active {
+      transform: scale(0.96);
+    }
+
+    .btn-op {
+      background-color: #ff9500;
+      color: #fff;
+    }
+
+    .btn-op:hover {
+      background-color: #e08500;
+    }
+
+    .btn-clear {
+      background-color: #ff3b30;
+      color: #fff;
+    }
+
+    .btn-clear:hover {
+      background-color: #d32f2f;
+    }
+
+    .btn-equal {
+      background-color: #34c759;
+      color: #fff;
+    }
+
+    .btn-equal:hover {
+      background-color: #28a745;
+    }
+  </style>
 </head>
 <body>
   <div class="calculator">
@@ -33,5 +120,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
